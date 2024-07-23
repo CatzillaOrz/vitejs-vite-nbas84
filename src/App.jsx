@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import './App.css';
-import Layout from './Layout';
+import Layout from './components/Layout';
 
 function App() {
   return (
-    <>
+    <>  
+    <Layout>
       <div className="card">
-        <Layout />
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
@@ -14,7 +14,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      </Layout>
     </>
+
   );
 }
 
